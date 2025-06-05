@@ -17,7 +17,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: min-content 1fr min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   margin-block-end: var(--page-gap, 30px);
   block-size: 100vh;
   min-block-size: var(--min-container-block-size, 668px);
@@ -45,24 +45,27 @@
   inline-size: var(--decorative-corner-size, 24px);
 }
 
+.header__decorating-element {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: calc(var(--page-padding, 10px) + 9px);
+  inset-block-start: var(--page-padding, 10px);
+}
+
 .header__decorating-element::before {
   content: 'rec';
-  position: absolute;
   color: var(--accent-color, #ff0070);
   line-height: 139%;
   text-transform: uppercase;
-  inset-inline-end: calc(10px + 9px + 9px + var(--page-padding, 10px));
-  inset-block-start: var(--page-padding, 10px);
 }
 
 .header__decorating-element::after {
   content: '';
-  position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 4px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
-  inset-inline-end: calc(9px + var(--page-padding, 10px));
-  inset-block-start: calc(0.7ch + var(--page-padding, 10px));
   block-size: 9px;
   inline-size: 9px;
 }

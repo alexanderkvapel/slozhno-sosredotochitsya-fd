@@ -10,11 +10,7 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-.theme-light .header__decorating-element::before {
-  display: none;
-}
-
-.theme-light .header__decorating-element::after {
+.theme-light .header__decorating-element {
   display: none;
 }
 
