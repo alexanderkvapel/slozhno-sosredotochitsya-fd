@@ -10,11 +10,11 @@
   --bg-image: url(../images/cover-image-dark.png);
   --font: 'IBM Plex mono';
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --min-container-block-size: 648px;
+  --min-container-block-size: 668px;
   --decorative-corner-size: 24px;
   --page-padding: 10px;
   --theme-menu-gap: 9px;
-  --page-gap: 50px;
+  --page-gap: 30px;
   --main-gap: 50px;
   --section-gap: 18px;
   --article-wrapper-gap: 20px;
@@ -26,9 +26,9 @@
   
   :root {
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --min-container-block-size: 984px;
+    --min-container-block-size: 1024px;
     --page-padding: 20px;
-    --page-gap: 80px;
+    --page-gap: 40px;
     --main-gap: 80px;
     --gallery-gap: 20px;
   }
@@ -41,7 +41,7 @@
 @media (width >= 1024px) {
 
   :root {
-    --min-container-block-size: 728px;
+    --min-container-block-size: 768px;
   }
 
   .section:nth-child(2n + 1) {

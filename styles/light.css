@@ -1,7 +1,7 @@
 :root.theme-light {
   --title-text-color: #ffc2e6;
   --accent-color: #ff8bcb;
-  --accent-title-color: #353430; 
+  --accent-title-color: #353430;
   --accent-text-color: #353430;
   --decorative-corner-color: #353430;
   --button-color: #353430;
@@ -23,7 +23,7 @@
   :root {
   --title-text-color: #ffc2e6;
   --accent-color: #ff8bcb;
-  --accent-title-color: #353430; 
+  --accent-title-color: #353430;
   --accent-text-color: #353430;
   --decorative-corner-color: #353430;
   --button-color: #353430;

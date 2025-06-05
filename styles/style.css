@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding: var(--page-padding, 10px);
   font-family: var(--font, 'IBM Plex mono'), sans-serif;
   font-size: 18px;
   background-image: var(--bg-image);
@@ -11,14 +10,17 @@
   background-attachment: fixed;
 }
 
+.content-section {
+  padding: var(--page-padding, 10px);
+}
+
 .header {
-  /* padding: 10px; */
   position: relative;
   display: grid;
   grid-template-rows: min-content 1fr min-content 1fr;
-  margin-block-end: var(--page-gap, 40px);
-  block-size: calc(100vh - 2 * var(--page-padding, 10px));
-  min-block-size: var(--min-container-block-size, 648px);
+  margin-block-end: var(--page-gap, 30px);
+  block-size: 100vh;
+  min-block-size: var(--min-container-block-size, 668px);
 }
 
 .header::before {
@@ -26,8 +28,8 @@
   position: absolute;
   border-inline-end: 1px solid var(--decorative-corner-color, #ff0070);
   border-block-start: 1px solid var(--decorative-corner-color, #ff0070);
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--page-padding, 10px);
+  inset-block-start: var(--page-padding, 10px);
   block-size: var(--decorative-corner-size, 24px);
   inline-size: var(--decorative-corner-size, 24px);
 }
@@ -37,8 +39,8 @@
   position: absolute;
   border-inline-start: 1px solid var(--decorative-corner-color, #ff0070);
   border-block-end: 1px solid var(--decorative-corner-color, #ff0070);
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--page-padding, 10px);
+  inset-block-end: var(--page-padding, 10px);
   block-size: var(--decorative-corner-size, 24px);
   inline-size: var(--decorative-corner-size, 24px);
 }
@@ -49,8 +51,8 @@
   color: var(--accent-color, #ff0070);
   line-height: 139%;
   text-transform: uppercase;
-  inset-inline-end: calc(10px + 9px + 9px);
-  inset-block-start: 0;
+  inset-inline-end: calc(10px + 9px + 9px + var(--page-padding, 10px));
+  inset-block-start: var(--page-padding, 10px);
 }
 
 .header__decorating-element::after {
@@ -59,8 +61,8 @@
   border-radius: 50%;
   box-shadow: 0 0 4px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
-  inset-inline-end: 9px;
-  inset-block-start: 0.7ch;
+  inset-inline-end: calc(9px + var(--page-padding, 10px));
+  inset-block-start: calc(0.7ch + var(--page-padding, 10px));
   block-size: 9px;
   inline-size: 9px;
 }
@@ -136,7 +138,7 @@ h4.title-decor {
 .main {
   display: grid;
   gap: var(--main-gap, 50px);
-  margin-block-end: var(--page-gap, 40px);
+  margin-block-end: var(--page-gap, 30px);
 }
 
 .section {
@@ -219,8 +221,8 @@ h4.title-decor {
 .footer {
   position: relative;
   display: grid;
-  block-size: calc(100vh - 2 * var(--page-padding, 10px));
-  min-block-size: var(--min-container-block-size, 648px);
+  block-size: 100vh;
+  min-block-size: var(--min-container-block-size, 668px);
 }
 
 .footer::before {
@@ -228,8 +230,8 @@ h4.title-decor {
   position: absolute;
   border-inline-end: 1px solid var(--decorative-corner-color, #ff0070);
   border-block-start: 1px solid var(--decorative-corner-color, #ff0070);
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--page-padding, 10px);
+  inset-block-start: var(--page-padding, 10px);
   block-size: var(--decorative-corner-size, 24px);
   inline-size: var(--decorative-corner-size, 24px);
 }
@@ -239,8 +241,8 @@ h4.title-decor {
   position: absolute;
   border-inline-start: 1px solid var(--decorative-corner-color, #ff0070);
   border-block-end: 1px solid var(--decorative-corner-color, #ff0070);
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--page-padding, 10px);
+  inset-block-end: var(--page-padding, 10px);
   block-size: var(--decorative-corner-size, 24px);
   inline-size: var(--decorative-corner-size, 24px);
 }
