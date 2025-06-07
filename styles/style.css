@@ -206,6 +206,11 @@ h4.title-decor {
   outline: 1px solid currentColor;
 }
 
+.articles {
+  display: grid;
+  gap: var(--article-wrapper-gap, 20px);
+}
+
 .gallery-wrapper {
   display: grid;
   gap: var(--gallery-gap, 10px);
