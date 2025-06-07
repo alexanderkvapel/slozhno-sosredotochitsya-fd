@@ -7,6 +7,7 @@
   --button-color: #ff0070;
   --hover-color: rgba(255 0 112 / .4);
   --article-text-color: #f1b2ce;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --font: 'IBM Plex mono';
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

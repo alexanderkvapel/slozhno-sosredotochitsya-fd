@@ -7,6 +7,7 @@
   --button-color: #353430;
   --hover-color: rgba(53 52 48 / .4);
   --article-text-color: #353430;
+  --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
 }
 
@@ -26,5 +27,9 @@
     --hover-color: rgba(53 52 48 / .4);
     --article-text-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
+  }
+
+  .header__decorating-element {
+    display: none;
   }
 }

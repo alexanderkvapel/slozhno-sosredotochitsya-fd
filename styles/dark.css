@@ -7,5 +7,10 @@
   --button-color: #ff0070;
   --hover-color: rgba(255 0 112 / .4);
   --article-text-color: #f1b2ce;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+}
+
+.theme-dark .header__decorating-element {
+  display: flex;
 }
