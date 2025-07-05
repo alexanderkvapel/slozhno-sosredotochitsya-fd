@@ -7,8 +7,8 @@
     "prettierFix": "prettier --write './**/*.{html,css,js}'",
     "lint": "stylelint '**/*.css'",
     "lintFix": "stylelint '**/*.css' --fix",
-    "checkAll": "npm run check && npm run lint",
-    "fixAll": "npm run format && npm run lintfix"
+    "checkAll": "npm run prettier && npm run lint",
+    "fixAll": "npm run prettierFix && npm run lintfix"
   },
   "repository": {
     "type": "git",
